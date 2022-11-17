@@ -1,0 +1,194 @@
+        body {
+            background-color: gainsboro;   
+            font-family: 'Inconsolata', monospace;
+            margin: auto;
+            color: #4d4c4c;
+        }
+
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+        }
+
+        #content-wrap {
+            padding-bottom: 110px;
+        }
+
+        
+
+        .text, .taidavorm, h1{ 
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        form{
+            text-align: center;
+        }
+
+        .text>img, form>img{
+            width: 44px;
+        }
+
+        .text>a{
+            color: #4d4c4c;
+        }
+
+        #btnExcel {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50px;
+            display: block;
+        }
+       
+
+        table{ 
+            margin: auto;
+            
+            text-align: left;
+        }
+
+        button{
+            border: green solid 1px;
+            width: 100px;
+           
+        }
+
+        footer{
+            height: 110px;
+            position: absolute;
+            bottom: 0;
+            background-color: gray;
+            color: whitesmoke;
+            width: 100%;
+        }
+
+       
+
+        .logo{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        h2{
+            padding-right: 10px;
+            align-self: center;
+        }
+
+        .logo>a>p{
+            color: rgb(245, 245, 245);
+
+        }
+        
+        
+
+        .keskel>a, .keskel{
+            text-decoration: none;
+            color: whitesmoke;
+            text-align:center;
+            align-self: center;
+            line-height: 20px;
+            font-size: small;
+        }
+
+        .keskel{
+            padding-top: 5px;
+          
+           
+        }
+
+        table {
+            border: 1px;
+            background-color: whitesmoke;
+            visibility:var(10px);
+            text-align: center;
+        }
+
+    
+        th {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            text-align: left;
+            width: 1cm;
+        } 
+        input, button, select, option {
+            background-color: whitesmoke;
+            font-family: 'Inconsolata', monospace;  
+            border-radius: 4px;
+            padding: 5px;
+        }
+
+       
+
+        button {
+            
+            color: green;
+            background-color: whitesmoke;
+            border-radius: 4px;
+            align-self: center;
+            
+        }
+
+        select, option, input {
+            
+            font-family: 'Inconsolata', monospace;
+            width: 230px;
+            border-radius: 4px;
+            border: none;
+            margin: 2px;
+            
+        }
+        
+        td {
+            padding: 10px 20px;
+            border: 1px solid #000;
+            text-align: right;
+        }
+
+        form > section {
+            display: flex;
+        }
+
+        .home-block, .example {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .inside{
+            height: fit-content;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+       
+
+        img{
+            width: 30px;
+            padding-top: 4px;
+        }
+
+        button {
+         
+            cursor: pointer;
+            align-self: center;
+        }
+
+        
+
+        .example {
+            width: 450px;
+        }
+
+        .row_div {
+            display: flex;
+            gap: 15px;
+        }
+
+        span>div {
+            display: flex;
+            gap: 15px;
+        }
+    

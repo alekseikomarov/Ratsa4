@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rendiarvestus</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div id="page-container">
+    <div id="content-wrap">
+    <div class="logo">
+        <a href="index.html" style="text-decoration: none">
+        <p style="background-color: green; margin-left: 10px; width: 44px; height: 44px; border-radius: 4px; text-align: center; line-height: 44px;">Ratsa</p>
+        </a>
+        <h2 style="font-size: x-small; font-weight: lighter">repetitive accounting task solution & automation</h2>
+    </div>
+
+    <h1>Rendiarvestus rentniku seisukohast</h1>
+    <div class="taidavorm">Graafik esitatakse tabelina. Avansiliste maksete korral esimese perioodi makse renditava vara nüüdisväärtuses ei osale.<br><br>Täida arvutuse vorm ning klikka "Arvuta". 
+    </div> <br><br>
+    <form id="form">
+        <label for="field1">Renditav vara<br>
+            <input type="text" name="Renditav vara" id="field1" placeholder="Renditava vara nimi, näiteks TR2">
+        </label><br><br><br>
+
+        <label for="period">Rendiperiood<br>
+        <select id="selectperiod" name="Unit of Rendiperiood">
+            <option value="0">Vali rendiperioodi ühik</option>
+            <option value="kuu" id="perioodkuu">kuu</option>
+            <option value="aasta">aasta</option>
+        </select><br>
+        <input type="number" id="period" min="1" step="1" placeholder="Rendiperioodi pikkus, näiteks 24" name="Rendiperiood">
+        </label><br>
+        
+        <br><br>
+        
+        <label for="payment">Rendimaksed<br>
+        <select id="selectpayment" onchange="pmntType()" name="Payment basis">
+            <option value="0">Vali rendimaksete tüüp</option>
+            <option value="1">annuiteet</option>
+            <option value="2">avanssannuiteet</option>
+            <option value="3">muutuvad irregulaarsed maksed</option>
+            <option value="4">muutuvad irregulaarsed avansilised maksed</option>
+        </select><br>
+        <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse, näiteks 1400" name="Amount">
+        </label>
+
+        <a class="variableinput_" style="visibility: hidden"></a><br><br>
+
+        <label for="rate">Diskontomäär %<br>
+            <input type="number" id="rate" min="0" step="0.01" placeholder="Diskontomäär, näiteks 8.55" name="Diskontomäär">
+        </label><br><br>
+            
+            
+        <button type="button" id="btn" onclick="check()">Arvuta</button><br><br>
+         
+        
+        
+    </form>
+    <script>
+       
+        var el = document.getElementById("form");
+        el.addEventListener("keypress", function(event) {
+          if (event.key === "Enter") {
+            event.preventDefault();
+          }});
+    </script>
+
+    <script>
+        let inputSideElement = document.querySelector('.variableinput_');
+      
+        
+        
+        function pmntType() {
+            var x = document.getElementById("selectpayment").value;
+            let per = Number(document.getElementById("period").value);
+            if(x == "3" || x == "4"){
+                document.getElementById("payment").style.visibility = "hidden";
+                inputSideElement.innerHTML = '';
+                for(i = 1; i < (per+1); i++){
+                    inputSideElement.innerHTML += `<br>
+                    <a class="variableinput_" style="visibility: visible; color: grey">
+                        <input type="number" id="${[i]}" min="1" step="1" placeholder="${[i]} rendimakse">
+                        
+                    </a>`
+
+        }
+            }
+            if(x == "1" || x == "2"){
+                inputSideElement.innerHTML = '';
+                document.getElementById("payment").style.visibility = "visible";
+            }
+
+            console.log(document.querySelector('.input'));
+}
+    </script>
+
+<script>
+
+        document.getElementById("btn").addEventListener("click", function(){ 
+            
+            
+            
+
+            
+
+        //   document.getElementById("btn").disabled = true;
+            
+        
+            //document.getElementById("maksekeskus").disabled = true;
+            
+           /* 
+            setTimeout(() => {
+            const disappear = document.getElementById('tableData');
+            disappear.style.display = 'none';
+            }, 4000); 
+
+           setTimeout("goPurchasing()", 1);
+           */
+
+           //setTimeout("thankYou()", 1);
+
+            // document.getElementById("export").disabled = true;
+ /*
+            setTimeout(() => {
+            alert("Solution is ready, Excel file will be available after payment. Proceed with Export to Excel. Thank you!") 
+            }, 4000);
+
+            setTimeout(() => {
+                window.location.href = "export.html";
+            }, 3100); */
+    
+
+        });
+        /*
+        function goPurchasing(){
+            document.getElementById("span").style.visibility = "visible";
+            displayInput();
+        }
+ 
+        function thankYou(){
+            document.getElementById("span2").style.visibility = "visible";
+        }
+       
+       function thankYou(){
+            document.getElementById("span2").style.visibility = "visible";
+        }
+    
+        function thankYou();
+        */
+
+ 
+/*
+        function copyToClipboard() {
+    var copyText = document.getElementById("tableData").innerHTML;
+    navigator.clipboard.writeText(copyText).then(() => {
+// Alert the user that the action took place.
+// Nobody likes hidden stuff being done under the hood!
+alert("Copied to clipboard");
+});
+}
+*/
+
+        
+
+/*
+        document.getElementById('buysolution').addEventListener("click", function() {
+            
+        }
+        );*/
+</script>
+
+
+
+<script>
+    
+    function toExcel(){
+        
+        var tableId = document.getElementById('tableData').id;
+        filename = document.getElementById("field1").value.replace(".", ",");
+        htmlTableToExcel(tableId, filename);
+    }
+    
+
+    var htmlTableToExcel= function(tableId, fileName){
+    
+    var excelFileName='excel_table_data';
+    var TableDataType = 'application/vnd.ms-excel';
+    var selectTable = document.getElementById(tableId);
+    var htmlTable = selectTable.outerHTML.replace(/ /g, '%20');
+    console.log(htmlTable)
+    
+    filename = filename?filename+'.xlsx':excelFileName+'.xlsx';
+    var excelFileURL = document.createElement("a");
+    document.body.appendChild(excelFileURL);
+    
+    if(navigator.msSaveOrOpenBlob){
+        var blob = new Blob(['\ufeff', htmlTable], {
+            type: TableDataType
+        });
+        navigator.msSaveOrOpenBlob( blob, fileName);
+    }else{
+        
+        excelFileURL.href = 'data:' + TableDataType + ', ' + htmlTable;
+        excelFileURL.download = fileName;
+        excelFileURL.click();
+    }
+    }
+
+    </script>
+
+<table id="tableData" onmousedown="return false" onselectstart="return false"></table> <br>
+
+<img src="Excel.png" onclick="toExcel()" style="cursor: pointer;  text-align: center; visibility: hidden; " id="btnExcel"><br>
+
+
+
+
+
+<script>
+       function displayInput(){
+
+        var username = document.getElementById("field1").value;
+        var period = document.getElementById("period").value;
+        var periodunit = document.getElementById("selectperiod").value;
+        var pmnt = document.getElementById("payment").value;
+    if((document.getElementById("selectpayment").value) == 1) {
+        var pmnttype = "ordinary annuity"
+        } else {
+        var pmnttype = "annuity due"
+        }
+        var rate = document.getElementById("rate").value;
+        
+       // document.getElementById("ppp").innerHTML =
+      //  "Solution is complete. Export to Excel is available after payment. Review your input and proceed to Make payment.";
+      //document.getElementById("ppp1").innerHTML =
+     //   "Complete! You can download solution (table below) based on your input (" + "Renditav vara: " + username + "," + " Rendiperiood: " + period + " " + periodunit + "," 
+       // + " Lease payment: " + pmnt + " " + pmnttype + "," + " Diskontomäär: " + rate + "%) to your computer or enjoy it on your screen. Thank you for visiting!"
+} 
+    </script>
+    
+    <script src="script.js"></script>
+    </div>
+    <footer>
+        <div class="keskel">
+            <a href="index.html">Avaleht</a><br>
+            <a href="https://www.riigiteataja.ee/akt/129122020042?leiaKehtiv" target="blank">Eesti finantsaruandluse standard</a><br>
+            <a href="https://ariregister.rik.ee/est/company/12127846/KP-O%C3%9C" target="blank">KP OÜ (12127846)</a>
+            <a>  |  </a>
+            <a href="mailto:aleksei.komarov@icloud.com" target="blank">aleksei.komarov@icloud.com</a><br>
+            <a href="https://www.linkedin.com/in/alekseikomarov" target="blank"><img src="Linkedin.png"></a>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
+
