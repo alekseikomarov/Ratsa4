@@ -318,8 +318,13 @@ for(i=1; i<(j+1); i++){
 //<form id="form" action="https://formspree.io/f/xwkzryag" method="POST" target="_blank">
 //button type="submit"
 
-//
+
 // window.location.reload();
+
+//<div class="text">
+//Raamatupidamisteenuseid osutab <a href="https://www.kutseregister.ee/ctrl/et/Tunnistused/vaata/11038431/1" target="_blank">kutseline raamatupidaja</a>.      
+//<br><a href="mailto:aleksei.komarov@icloud.com" target="blank">Kirjelda oma tööd ja küsi hinnapakkumist</a>.<br><br>
+//</div>
 
 
 
