@@ -28,7 +28,7 @@ form{
 
 .text>a{
     color: #6d6c6c;
-    text-decoration: 1px solid underline;
+    font-style: italic;
 }
 
 #btnExcel {
