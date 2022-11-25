@@ -11,7 +11,7 @@ body {
 }
 
 #content-wrap {
-    padding-bottom: 110px;
+    padding-bottom: 140px;
 }
 
 
@@ -28,7 +28,7 @@ form{
 
 .text>a{
     color: #6d6c6c;
-    text-decoration: underline;
+    text-decoration: 1px solid underline;
 }
 
 #btnExcel {
@@ -59,6 +59,7 @@ footer{
     background-color: gray;
     color: whitesmoke;
     width: 100%;
+    font-size: small;
 }
 
 a{
