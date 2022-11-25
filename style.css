@@ -2,7 +2,7 @@ body {
     background-color: gainsboro;   
     font-family: 'Inconsolata', monospace;
     margin: auto;
-    color: #4d4c4c;
+    color: #6d6c6c;
 }
 
 #page-container {
@@ -61,21 +61,7 @@ footer{
     width: 100%;
 }
 
-
-.logo>a>p {
-    background-color: green; 
-    margin-left: 10px; 
-    width: 60px; 
-    height: 60px; 
-    border-radius: 6px; 
-    text-align: center; 
-    line-height: 60px; 
-    font-size: small;
-}
-
-
-
-.logo>a{
+a{
     color: rgb(245, 245, 245);
     text-decoration: none;
     align-content: center;
@@ -89,7 +75,6 @@ footer{
     text-align:center;
     align-self: center;
     line-height: 20px;
-    font-size: small;
 }
 
 .keskel{
@@ -161,7 +146,10 @@ form > section {
     padding-bottom: 5px;
 }
 
-
+.logo>a>img {
+    width: 70px;
+    padding: 10px;
+}
 
 img{
     width: 30px;

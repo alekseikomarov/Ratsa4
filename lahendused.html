@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Rendiarvestus</title>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="Ratsa.ee.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body id="body">
     <div id="page-container">
     <div id="content-wrap">
         <div class="logo">
-            <a href="index.html"><p>ratsa.ee</p></a>
-        </div>
+            <a href="index.html"><img src="Ratsa.ee.png" alt="ratsa.ee logo"></a>
+            </div> 
 
     <div class="taidavorm">
         Rentniku rendiarvestuse graafik esitatakse tabelina. Avansiliste maksete korral esimese perioodi makse renditava vara nüüdisväärtuses ei osale.
@@ -22,7 +22,7 @@
     </div> <br><br>
     <form id="form">
         <label for="field1">Renditav vara<br>
-            <input type="text" name="Renditav vara" id="field1" placeholder="Renditava vara nimi, näiteks TR2">
+            <input type="text" name="Renditav vara" id="field1" placeholder="Renditava vara nimi">
         </label><br><br><br>
 
         <label for="period">Rendiperiood<br>
@@ -31,7 +31,7 @@
             <option value="kuu" id="perioodkuu">kuu</option>
             <option value="aasta">aasta</option>
         </select><br>
-        <input type="number" id="period" min="1" step="1" placeholder="Rendiperioodi pikkus, näiteks 24" name="Rendiperiood">
+        <input type="number" id="period" min="1" step="1" placeholder="Rendiperioodi pikkus" name="Rendiperiood">
         </label><br>
         
         <br><br>
@@ -44,7 +44,7 @@
             <option value="3">muutuvad irregulaarsed maksed</option>
             <option value="4">muutuvad irregulaarsed avansilised maksed</option>
         </select><br>
-        <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse, näiteks 1400" name="Amount">
+        <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse" name="Amount">
         </label>
 
         <a class="variableinput_" style="visibility: hidden"></a><br><br>
