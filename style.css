@@ -27,7 +27,7 @@ form{
 }
 
 .text>a{
-    color: #4d4c4c;
+    color: #6d6c6c;
     text-decoration: underline 1px solid;
 }
 
@@ -53,7 +53,7 @@ button{
 }
 
 footer{
-    height: 120px;
+    height: 140px;
     position: absolute;
     bottom: 0;
     background-color: gray;
@@ -154,6 +154,8 @@ form > section {
 img{
     width: 30px;
     padding-top: 7px;
+  
+    
 }
 
 button {
