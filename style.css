@@ -3,7 +3,10 @@ body {
     font-family: 'Inconsolata', monospace;
     margin: auto;
     color: #6d6c6c;
+   
 }
+
+
 
 #page-container {
     position: relative;
@@ -14,9 +17,20 @@ body {
     padding-bottom: 140px;
 }
 
+.text {
+    text-align: left;
+    margin: auto;
+    padding: 10px;
+}
+
+.textkeskel {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
 
 
-.text, .taidavorm, h1{ 
+.taidavorm, h1{ 
     margin: auto;
     padding: 10px;
     text-align: center;
@@ -28,7 +42,17 @@ form{
 
 .text>a{
     color: #6d6c6c;
-    font-style: italic;
+    text-decoration: underline;
+}
+
+.textkeskel>a{
+    color: #6d6c6c;
+    text-decoration: underline;
+}
+
+.textkeskel>a>img {
+   width: 70px;
+   padding-top: 4px;
 }
 
 #btnExcel {
@@ -59,7 +83,7 @@ footer{
     background-color: gray;
     color: whitesmoke;
     width: 100%;
-    font-size: small;
+    
 }
 
 a{
@@ -75,7 +99,7 @@ a{
     color: whitesmoke;
     text-align:center;
     align-self: center;
-    line-height: 20px;
+    line-height: 30px;
 }
 
 .keskel{
@@ -134,11 +158,7 @@ form > section {
     display: flex;
 }
 
-.home-block, .example {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
+
 
 .inside{
     height: fit-content;
@@ -154,7 +174,7 @@ form > section {
 
 img{
     width: 30px;
-    padding-top: 7px;
+    padding-top: 10px;
   
     
 }
