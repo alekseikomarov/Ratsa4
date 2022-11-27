@@ -23,7 +23,7 @@ body {
     padding: 10px;
 }
 
-.textkeskel, h1 {
+.textkeskel, h1, h2 {
     text-align: center;
     margin: auto;
     padding: 10px;
