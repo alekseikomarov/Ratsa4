@@ -17,12 +17,24 @@
             </div> 
 
     <div class="taidavorm">
-        Rentniku rendiarvestuse graafik esitatakse tabelina. Avansiliste maksete korral esimese perioodi makse renditava vara nüüdisväärtuses ei osale.
-        Graafiku genereerimiseks täida arvutuse vorm ning kliki "Arvuta". 
-    </div> <br><br>
+        <h2>Kapitalirent</h2>
+        <div class="text">
+        Rendilepingute liigitamist kapitali- ja kasutusrendiks käsitleb RTJ 9 "Rendiarvestus".
+        Kapitalirendi korral rentniku aruannetes kajastatakse<br><br>
+        - renditava vara ja rendikohustise bilansiline maksumus, <br><br>
+        - renditava vara amortisatsioonikulu, <br><br>
+        - rendikohustise finantskulu. <br><br>
+        </div>
+
+        <div class="textkeskel">
+        <h3>ratsa.ee teeb kapitalirendi tabelarvutuse automaatselt.</h3>
+        <a href="Naide.pdf" target="_blank">Kapitalirendi tabelarvutuse näide</a><br><br>
+        Arvutuse genereerimiseks täida vorm ning kliki "Arvuta". 
+        </div>
+    </div>
     <form id="form">
         <label for="field1">Renditav vara<br>
-            <input type="text" name="Renditav vara" id="field1" placeholder="Renditava vara nimi">
+            <input type="text" name="Renditav vara" id="field1" placeholder="...">
         </label><br><br><br>
 
         <label for="period">Rendiperiood<br>
@@ -41,8 +53,8 @@
             <option value="0">Vali rendimaksete tüüp</option>
             <option value="1">annuiteet</option>
             <option value="2">avanssannuiteet</option>
-            <option value="3">muutuvad irregulaarsed maksed</option>
-            <option value="4">muutuvad irregulaarsed avansilised maksed</option>
+            <option value="3">muutuvad maksed</option>
+            <option value="4">muutuvad avansilised maksed</option>
         </select><br>
         <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse" name="Amount">
         </label>
@@ -246,7 +258,7 @@ alert("Copied to clipboard");
     </div>
     <footer>
         <div class="keskel">
-            <a href="index.html">Avaleht</a><a>  |  </a><a href="lahendused.html">Rendiarvestus</a>  |  <a href="https://ariregister.rik.ee/est/company/12127846/KP-O%C3%9C" target="blank">KP OÜ</a><br>
+            <a href="index.html">Avaleht</a><a>  |  </a><a href="rendiarvestus.html">Rendiarvestus</a>  |  <a href="https://ariregister.rik.ee/est/company/12127846/KP-O%C3%9C" target="blank">KP OÜ</a><br>
             <a href="https://www.riigiteataja.ee/akt/129122020042?leiaKehtiv" target="blank">Eesti finantsaruandluse standard</a><br>
             <a href="https://www.linkedin.com/in/alekseikomarov" target="blank"><img src="Linkedin.png" alt="LinkedIn logo"></a>
             <a href="https://www.facebook.com/ratsa.ee" target="blank"><img src="Facebook.png" alt="Facebook logo"></a>
