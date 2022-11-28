@@ -34,12 +34,12 @@
     
     <form id="form">
         <label for="field1">Renditav vara<br>
-            <input type="text" name="Renditav vara" id="field1" placeholder="...">
+            <input type="text" name="Renditav vara" id="field1" placeholder="">
         </label><br><br>
 
         <label for="period">Rendiperiood<br>
         <select id="selectperiod" name="Unit of Rendiperiood">
-            <option value="0">Vali rendiperioodi ühik</option>
+            <option value="0">Rendiperioodi ühik</option>
             <option value="kuu" id="perioodkuu">kuu</option>
             <option value="aasta">aasta</option>
         </select><br>
@@ -48,7 +48,7 @@
         
         <label for="payment">Rendimaksed<br>
         <select id="selectpayment" onchange="pmntType()" name="Payment basis">
-            <option value="0">Vali rendimaksete tüüp</option>
+            <option value="0">Rendimaksete tüüp</option>
             <option value="1">annuiteet</option>
             <option value="2">avanssannuiteet</option>
             <option value="3">muutuvad maksed</option>
@@ -60,13 +60,10 @@
         <a class="variableinput_" style="visibility: hidden"></a><br><br>
 
         <label for="rate">Diskontomäär %<br>
-            <input type="number" id="rate" min="0" step="0.01" placeholder="Diskontomäär, näiteks 8.55" name="Diskontomäär">
-        </label><br><br>
+            <input type="number" id="rate" min="0" step="0.01" placeholder="" name="Diskontomäär">
+        </label><br><br><br>
             
-            
-        <button type="button" id="btn" onclick="check()"><img src="calculator.svg" alt=""><br>Arvuta</button><br><br>
-         
-        
+        <button type="button" id="btn" onclick="check()"><img src="calculator.svg" alt="kalkulaatori svg"><br>Arvuta</button><br><br>
         
     </form>
     <script>
@@ -224,7 +221,7 @@ alert("Kopeeritud");
 <table id="tableData" onmousedown="return false" onselectstart="return false"></table> <br>
 
 <button type="button" style= "visibility: hidden" id="btnExcel" onclick="copyToClipboard()">
-    <img src="table.svg" onclick="copyToClipboard()"> <br> Kopeeri ja kasuta Excelis</button><br>
+    <img src="table.svg" alt="tabel svg" onclick="copyToClipboard()"> <br> Kopeeri ja kasuta Excelis</button><br>
     
 
 
@@ -263,9 +260,11 @@ alert("Kopeeritud");
         <div class="keskel">
             <a href="index.html">Avaleht</a><a>  |  </a><a href="rendiarvestus.html">Rendiarvestus</a>  |  <a href="https://ariregister.rik.ee/est/company/12127846/KP-O%C3%9C" target="blank">KP OÜ</a><br>
             <a href="https://www.riigiteataja.ee/akt/129122020042?leiaKehtiv" target="blank">Eesti finantsaruandluse standard</a><br>
-            <a href="mailto:aleksei.komarov@icloud.com" target="blank"><img src="envelope.svg" alt="E-Mail"></a>
-            <a href="https://www.linkedin.com/in/alekseikomarov" target="blank"><img src="linkedin.svg" alt="LinkedIn logo"></a>
+            <div class="icons">
+            <a href="mailto:aleksei.komarov@icloud.com" target="blank"><img src="envelope.svg" alt="E-Mail"></a> 
+            <a href="https://www.linkedin.com/in/alekseikomarov" target="blank"><img src="linkedin.svg" alt="LinkedIn logo"></a> 
             <a href="https://www.facebook.com/ratsa.ee" target="blank"><img src="facebook.svg" alt="Facebook logo"></a>
+            </div>
         </div>
     </footer>
     </div>

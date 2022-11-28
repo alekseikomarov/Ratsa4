@@ -3,10 +3,7 @@ body {
     font-family: 'Open Sans';
     margin: auto;
     color: #6d6c6c;
-   
 }
-
-
 
 #page-container {
     position: relative;
@@ -29,9 +26,6 @@ body {
     padding: 10px;
 }
 
-
-
-
 form{
     text-align: center;
 }
@@ -52,12 +46,6 @@ form{
     margin-right: auto;
 }
 
-table{ 
-    margin: auto;
-    
-    text-align: left;
-}
-
 footer{
     height: 140px;
     position: absolute;
@@ -65,7 +53,6 @@ footer{
     background-color: gray;
     color: whitesmoke;
     width: 100%;
-    
 }
 
 a{
@@ -74,7 +61,7 @@ a{
     align-content: center;
 }
 
-.keskel>a, .keskel{
+.keskel>a, .keskel {
     text-decoration: none;
     color: whitesmoke;
     text-align:center;
@@ -87,6 +74,8 @@ a{
 }
 
 table {
+    margin: auto;
+    text-align: left;
     border: 1px;
     background-color: whitesmoke;
     visibility:var(10px);
@@ -101,29 +90,18 @@ th {
 } 
 
 select, option, input {
-    width: 230px;
     border-radius: 4px;
     border: none;
     margin: 2px; 
     font-family: 'Open Sans';
     color: #6d6c6c;
+    
 }
 
 td {
     padding: 10px 20px;
     border: 1px solid #000;
     text-align: right;
-}
-
-form > section {
-    display: flex;
-}
-
-.inside{
-    height: fit-content;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 .logo>a>img {
@@ -140,7 +118,7 @@ button {
     cursor: pointer;
     line-height: 30px;
     font-family: 'Open Sans';
-    width: 230px;
+    width: 168px;
     color: #6d6c6c;
 }
 
@@ -149,16 +127,8 @@ button>img {
     color: #6d6c6c;
 }
 
-.example {
-    width: 450px;
-}
-
-.row_div {
+.icons {
     display: flex;
-    gap: 15px;
-}
-
-span>div {
-    display: flex;
-    gap: 15px;
+    gap: 20px;
+    justify-content: center;
 }
