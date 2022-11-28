@@ -70,10 +70,10 @@ if((document.getElementById("selectpayment").value == 2)){
     heading_2.innerHTML = "Rendimakse (avanssannuiteet)";
 }
 if((document.getElementById("selectpayment").value == 3)){
-    heading_2.innerHTML = "Rendimakse (muutuvad irregulaarsed maksed)";
+    heading_2.innerHTML = "Rendimakse (muutuvad maksed)";
 }
 if((document.getElementById("selectpayment").value == 4)){
-    heading_2.innerHTML = "Rendimakse (muutuvad irregulaarsed avansilised maksed)";
+    heading_2.innerHTML = "Rendimakse (muutuvad avansilised maksed)";
 }
 
 let heading_3 = document.createElement('th');
