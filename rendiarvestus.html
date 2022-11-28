@@ -64,7 +64,7 @@
         </label><br><br>
             
             
-        <button type="button" id="btn" onclick="check()"><img src="calculator.svg" alt=""> Arvuta</button><br><br>
+        <button type="button" id="btn" onclick="check()"><img src="calculator.svg" alt=""><br>Arvuta</button><br><br>
          
         
         
@@ -162,16 +162,16 @@
         */
 
  
-/*
+
         function copyToClipboard() {
     var copyText = document.getElementById("tableData").innerHTML;
     navigator.clipboard.writeText(copyText).then(() => {
 // Alert the user that the action took place.
 // Nobody likes hidden stuff being done under the hood!
-alert("Copied to clipboard");
+alert("Kopeeritud");
 });
 }
-*/
+
 
         
 
@@ -223,8 +223,13 @@ alert("Copied to clipboard");
 
 <table id="tableData" onmousedown="return false" onselectstart="return false"></table> <br>
 
-<img src="Excel.png" alt="Excel logo" onclick="toExcel()" style="cursor: pointer;  text-align: center; visibility: hidden" 
-    id="btnExcel"><br><br>
+<button type="button" style= "visibility: hidden" id="btnExcel" onclick="copyToClipboard()">
+    <img src="table.svg" onclick="copyToClipboard()"> <br> Kopeeri ja kasuta Excelis</button><br>
+    
+
+
+
+
 
 
 
