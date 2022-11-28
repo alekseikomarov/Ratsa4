@@ -42,6 +42,7 @@
         </select><br>
 
         <input type="number" id="period" min="1" step="1" placeholder="Rendiperioodi pikkus" name="Rendiperiood"><br>
+        <input type="number" id="rate" min="0" step="0.01" placeholder="Diskontomäär %" name="Diskontomäär"><br>
         
         <select id="selectpayment" onchange="pmntType()" name="Payment basis">
             <option value="0">Rendimaksete tüüp</option>
@@ -50,9 +51,9 @@
             <option value="3">muutuvad maksed</option>
             <option value="4">muutuvad avansilised maksed</option>
         </select><br>
-        <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse" name="Amount">
+        <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse" name="Amount"><br>
         <a class="variableinput_" style="visibility: hidden"></a><br>
-        <input type="number" id="rate" min="0" step="0.01" placeholder="Diskontomäär %" name="Diskontomäär"><br><br>
+        
         
         <button type="button" id="btn" onclick="check()"><img src="calculator.svg" alt="kalkulaatori svg"><br>Arvuta</button><br><br>
         
