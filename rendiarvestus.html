@@ -33,15 +33,15 @@
         </div><br>
     
     <form id="form">
-        <input type="text" name="Renditav vara" id="field1" placeholder="Renditav vara"> <br><br>
+        <input type="text" name="Renditav vara" id="field1" placeholder="Renditav vara"> <br>
         
         <select id="selectperiod" name="Unit of Rendiperiood">
             <option value="0">Rendiperioodi ühik</option>
             <option value="kuu" id="perioodkuu">kuu</option>
             <option value="aasta">aasta</option>
-        </select><br><br>
+        </select><br>
 
-        <input type="number" id="period" min="1" step="1" placeholder="Rendiperioodi pikkus" name="Rendiperiood"> <br><br>
+        <input type="number" id="period" min="1" step="1" placeholder="Rendiperioodi pikkus" name="Rendiperiood"> <br>
         
         <select id="selectpayment" onchange="pmntType()" name="Payment basis">
             <option value="0">Rendimaksete tüüp</option>
@@ -49,11 +49,11 @@
             <option value="2">avanssannuiteet</option>
             <option value="3">muutuvad maksed</option>
             <option value="4">muutuvad avansilised maksed</option>
-        </select><br><br>
+        </select><br>
         <input type="number" min="1" step="1" id="payment" placeholder="Rendimakse" name="Amount">
         </label>
 
-        <a class="variableinput_" style="visibility: hidden"></a><br><br>
+        <a class="variableinput_" style="visibility: hidden"></a><br>
 
         <input type="number" id="rate" min="0" step="0.01" placeholder="Diskontomäär %" name="Diskontomäär"><br><br>
         
